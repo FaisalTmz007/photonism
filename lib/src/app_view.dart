@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login_view.dart';
+
 class AppView extends StatelessWidget {
   const AppView({super.key});
 
@@ -39,6 +41,6 @@ class _routePageState extends State<routePage> {
 
   @override
   Widget build(BuildContext context) {
-    return _isLoggedin ? HomePageView() : LoginView();
+    return LoginView();
   }
 }
